@@ -7,7 +7,6 @@ Web site: http://barcode-coder.com/
 
 This extension supports barcode types ean8, ean13, upc, std25, int25, code11, code39, code93, code128, codabar, msi, datamatrix
 
-This extension based on  "Simple jQuery Based Barcode Generator"
 
 ### **Requirements**
 - Yii Version 1.1.13 or later
