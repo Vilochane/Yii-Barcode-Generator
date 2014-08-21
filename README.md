@@ -89,7 +89,8 @@ class Common{
     public static function getItemBarcode($valueArray) {
         $elementId = $valueArray['itemId'] . "_bcode";
         $value = $valueArray['barocde'];
-        $type = 'code128'; /* you can set the type dynamically if you want valueArray eg - $valueArray['type']*/
+        $type = 'code128'; /* you can set the type dynamically 
+                              if you want valueArray eg - $valueArray['type']*/
         self::getBarcode(array('elementId' => $elementId, 'value' => $value, 'type' => $type));
         $div = CHtml::tag('div', array('id' => $elementId));        
         if(!empty($value)){
