@@ -19,8 +19,7 @@ This extension based on  "Simple jQuery Based Barcode Generator"
 
 
 - Initialize the widget in your view (simple)
-~~~
-[php]
+<?php
 $optionsArray = array(
 'elementId'=> 'showBarcode', /* div or canvas id*/
 'value'=> '4797001018719', /* value for EAN 13 be careful to set right values for each barcode type */
@@ -32,7 +31,7 @@ $this->widget('ext.barcode.Barcode', $optionsArray);
 
 - Widget with advanced options 
 - Kindly note there are specific setting for canvas output and datamatrix type if     not set default settings will be applied.
-
+?>
 
 ~~~
 [php]
