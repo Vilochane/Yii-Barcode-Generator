@@ -5,7 +5,8 @@ This extension based on  "Simple jQuery Based Barcode Generator"
 Wrapper for BarCode Coder Library (BCC Library Version 2.0) by DEMONTE Jean-Baptiste, HOUREZ Jonathan.
 Web site: http://barcode-coder.com/
 
-This extension supports barcode types ean8, ean13, upc, std25, int25, code11, code39, code93, code128, codabar, msi, datamatrix
+This extension supports barcode types ean8, ean13, upc, std25, int25, code11, code39, 
+code93, code128, codabar, msi, datamatrix
 
 
 ### **Requirements**
