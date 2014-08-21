@@ -73,7 +73,10 @@ $this->widget('zii.widgets.grid.CGridView', array(
     'filter' => $model,
     'columns' => array(
         'item_code', 
-        array('name' => 'item_barcode', 'type' => 'raw', 'value'=>'Common::getItemBarcode(array("itemId"=> $data->item_id, "barocde"=>$data->item_barcode))'),
+        array('name' => 'item_barcode', 'type' => 'raw', 
+        'value'=>'Common::getItemBarcode(array(
+                                 "itemId"=> $data->item_id, 
+                                 "barocde"=>$data->item_barcode))'),
     ),
 ));
 ```
