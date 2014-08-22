@@ -5,7 +5,8 @@ This extension based on  "Simple jQuery Based Barcode Generator"
 Wrapper for BarCode Coder Library (BCC Library Version 2.0) by DEMONTE Jean-Baptiste, HOUREZ Jonathan.
 Web site: http://barcode-coder.com/
 
-This extension supports barcode types ean8, ean13, upc, std25, int25, code11, code39, code93, code128, codabar, msi, datamatrix
+This extension supports barcode types ean8, ean13, upc, std25, int25, code11, code39, 
+code93, code128, codabar, msi, datamatrix
 
 
 ### **Requirements**
@@ -27,7 +28,8 @@ This extension supports barcode types ean8, ean13, upc, std25, int25, code11, co
 $optionsArray = array(
 'elementId'=> 'showBarcode', /* div or canvas id*/
 'value'=> '4797001018719', /* value for EAN 13 be careful to set right values for each barcode type */
-'type'=>'supported types ean13',/* ean8, ean13, upc, std25, int25, code11, code39, code93, code128, codabar, msi, datamatrix*/
+'type'=>'supported types ean13',/* ean8, ean13, upc, std25, int25, code11, 
+                                 code39, code93, code128, codabar, msi, datamatrix*/
 
 );
 $this->widget('ext.barcode.Barcode', $optionsArray);
@@ -71,7 +73,10 @@ $this->widget('zii.widgets.grid.CGridView', array(
     'filter' => $model,
     'columns' => array(
         'item_code', 
-        array('name' => 'item_barcode', 'type' => 'raw', 'value'=>'Common::getItemBarcode(array("itemId"=> $data->item_id, "barocde"=>$data->item_barcode))'),
+        array('name' => 'item_barcode', 'type' => 'raw', 
+        'value'=>'Common::getItemBarcode(array(
+                                 "itemId"=> $data->item_id, 
+                                 "barocde"=>$data->item_barcode))'),
     ),
 ));
 ```
@@ -84,7 +89,8 @@ class Common{
     public static function getItemBarcode($valueArray) {
         $elementId = $valueArray['itemId'] . "_bcode";
         $value = $valueArray['barocde'];
-        $type = 'code128'; /* you can set the type dynamically if you want valueArray eg - $valueArray['type']*/
+        $type = 'code128'; /* you can set the type dynamically 
+                              if you want valueArray eg - $valueArray['type']*/
         self::getBarcode(array('elementId' => $elementId, 'value' => $value, 'type' => $type));
         $div = CHtml::tag('div', array('id' => $elementId));        
         if(!empty($value)){
