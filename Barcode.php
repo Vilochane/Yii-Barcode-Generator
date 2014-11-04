@@ -26,7 +26,7 @@ class Barcode extends CWidget {
     public $settings = array();
     private $defaultSettings = array(
         'output' => 'css', /* css, bmp, svg, canvas */
-        'bgColor' => '#fff', /*background color*/
+        'bgColor' => '#FFFFFF', /*background color*/
         'color' => '#000000', /*"1" Bars color*/
         'barWidth' => 1,
         'barHeight' => 50,
@@ -89,7 +89,7 @@ class Barcode extends CWidget {
                           }"
                 . "$initBarcode"
                 . "";
-        
+        echo CHtml::tag('div', array('id' => $this->elementId));       
         return $js;
     }
 

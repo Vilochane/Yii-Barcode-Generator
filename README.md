@@ -20,8 +20,15 @@ code93, code128, codabar, msi, datamatrix
 - "div" or "canvas" must be specified with an id in your view where you want to display the bracode 
 "<" div id="showBarcode" ">""<"/div">" OR if output option is canvas "<"canvas id="showBarcode" width="150" height="150"">""<"/canvas">"
 
-
-
+- Version 1.1 update Same as the previous but no need of the div element, minor modification of the Common Class function.
+````php
+public static function getItemBarcode($valueArray) {
+        $elementId = $valueArray['itemId'] . "_bcode";
+        $value = $valueArray['barocde'];
+        $type = 'code128'; /* you can set the type dynamically if you want valueArray eg - $valueArray['type']*/
+        self::getBarcode(array('elementId' => $elementId, 'value' => $value, 'type' => $type));  
+    }
+````
 - Initialize the widget in your view (simple)
 
 ````php
