@@ -40,7 +40,7 @@ class Common{
      */
     public static function getBarcode($optionsArray) {
  
-        Yii::app()->getController()->widget('ext.barcode.Barcode', $optionsArray);
+        Yii::app()->getController()->widget('ext.Yii-Barcode-Generator.Barcode', $optionsArray);
     }
  
 }
@@ -95,7 +95,7 @@ $optionsArray = array(
 'type'=>'ean13',/*supported types  ean8, ean13, upc, std25, int25, code11, code39, code93, code128, codabar, msi, datamatrix*/
  
 );
-$this->widget('ext.barcode.Barcode', $optionsArray);
+$this->widget('ext.Yii-Barcode-Generator.Barcode', $optionsArray);
 ````
 
 
