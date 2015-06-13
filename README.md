@@ -71,6 +71,7 @@ $this->widget('zii.widgets.CDetailView', array(
             'value' => Common::getItemBarcode(array("itemId"=> $model->item_id, "barocde"=>$model->item_barcode))
         ),
 ));
+````
 - Usage with a View
 
 ````php
