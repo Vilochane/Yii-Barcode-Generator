@@ -23,7 +23,7 @@ code93, code128, codabar, msi, datamatrix
 - Version 1.2 update Fixed the Bug Regarding CDetail View not displaying. Removed div element creation.
 - Version 1.1 update Same as the previous but no need of the div element, minor modification of the Common Class function.
 
-### **Helper Class Common under models (No need to call the extension initialization): ¶**
+#### Helper Class Common under models (No need to call the extension initialization):
 ````php
 class Common{
     /* bracode */
@@ -45,7 +45,7 @@ class Common{
  
 }
 ````
-### **Usage with helper class Common : **
+#### Usage with helper class Common: 
 - Usage with CGridView
 
 ````php
@@ -84,7 +84,7 @@ $optionsArray = array(
 echo Common::getItemBarcode($optionsArray);
 ````
 
-### **Initialize the widget in your view regular way by initializing the widget **
+#### Initialize the widget in your view regular way by initializing the widget:
 
 ````php
 echo '<div id="showBarcode"><div>'; //the same id should be given to the extension item id 
