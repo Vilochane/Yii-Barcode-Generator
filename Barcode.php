@@ -88,8 +88,7 @@ class Barcode extends CWidget {
                             ctx.strokeRect (0, 0, canvas.width, canvas.height);
                           }"
                 . "$initBarcode"
-                . "";
-        echo CHtml::tag('div', array('id' => $this->elementId));       
+                . "";        
         return $js;
     }
 
